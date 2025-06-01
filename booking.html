@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Trainer</title>
+    <link rel="stylesheet" href="styles/booking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2 id="welcomeMessage">Welcome, user!</h2>
+
+        <div class="trainer-card">
+            <img src="assets/images/manu.jpg" alt="Trainer Manu">
+            <div class="trainer-info">
+                <h3>Trainer Manu</h3>
+                <p><strong> Expertise:</strong>Calisthenics, Powerlifting, Athletics</p>
+            </div>
+        </div>
+
+        <h3>Selected Skill Sets</h3>
+        <ul id="selectedSkillsList"></ul>
+
+        <div class="schedule">
+            <h3>Pick a Schedule:</h3>
+            <select class="timeSlot">
+                <option value="6:00 AM - 7:00 AM">5:00 AM - 6:00 AM</option>
+                <option value="8:00 AM - 9:00 AM">6:00 AM - 7:00 AM</option>
+                <option value="5:00 PM - 6:00 PM">6:00 PM - 7:00 PM</option>
+                <option value="5:00 PM - 6:00 PM">7:00 PM - 8:00 PM</option>
+            </select>
+            <button id="bookClass">🚀 Book Training</button>
+        </div>
+    </div>
+
+    <footer>
+    <div class="footer-content">
+         <p>Developer : <strong>Manu.S</strong></p>
+        <img src="assets/images/formal.jpg" alt="Manu" class="footer-photo">
+         &nbsp; &nbsp;<p> LevelUp Fitness © 2025</p>   &nbsp; &nbsp;
+        <p>Contact: <a   class="footer-a" href="mailto:manu.gowda1615@gmail.com">manu.gowda1615@gmail.com</a></p>
+    </div>
+</footer>
+    <script type="module" src="scripts/firebase.js"></script>
+
+    <script type="module" src="scripts/booking.js"></script>
+</body>
+</html>

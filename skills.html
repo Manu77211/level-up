@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LevelUp - Skill Selection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/skills.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h2 id="userGreeting">Choose Your Path</h2>
+            <p>Select a skill path to focus on your journey. </p>
+        </div>
+        <div class="skills">
+            <div class="skill-card" onclick="selectSkill('Strength Training')">
+                <h3>Strength Training</h3>
+                <p>Build power and endurance through resistance training.</p>
+            </div>
+            <div class="skill-card" onclick="selectSkill('Cardio Training')">
+                <h3>Cardio Training</h3>
+                <p>Boost your stamina and heart health through intense cardio.</p>
+            </div>
+            <div class="skill-card" onclick="selectSkill('Agility Training')">
+                <h3>Agility Training</h3>
+                <p>Enhance your speed, balance, and coordination.</p>
+            </div>
+            <div class="skill-card" onclick="selectSkill('Flexibility Training')">
+                <h3>Flexibility Training</h3>
+                <p>Improve your range of motion and muscle elasticity.</p>
+            </div>
+            <div class="skill-card" onclick="selectSkill('Mental Focus')">
+                <h3>Mental Focus</h3>
+                <p>Sharpen your concentration and mental resilience.</p>
+            </div>
+            <div>
+                 <button id="confirmSelection" class="confirm-button">Confirm Selection</button>
+            </div>
+        </div>
+    </div>
+
+     <footer>
+    <div class="footer-content">
+         <p>Developer : <strong>Manu.S</strong></p>
+        <img src="assets/images/formal.jpg" alt="Manu" class="footer-photo">
+         &nbsp; &nbsp;<p> LevelUp Fitness © 2025</p>   &nbsp; &nbsp;
+        <p>Contact: <a   class="footer-a" href="mailto:manu.gowda1615@gmail.com">manu.gowda1615@gmail.com</a></p>
+    </div>
+</footer>
+    <script type="module" src="scripts/firebase.js"></script>
+
+   
+    <script  type="module" src="scripts/skills.js"></script>
+</body>
+</html>

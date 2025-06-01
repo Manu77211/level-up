@@ -1,0 +1,279 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0f0e17;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;  /* Made it wider */
+    padding: 2rem;
+    background-color: #1f1e2e;
+    border-radius: 16px;
+    box-shadow: 0 0 30px #9f7aea, 0 0 60px #9f7aea, 0 0 90px #9f7aea;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 0 0 60px #9f7aea, 0 0 120px #9f7aea;
+}
+
+.trainer-card {
+    display: flex;
+    align-items: center;
+    background: #292838;
+    padding: 1rem;
+    border-radius: 16px;
+    box-shadow: 0 0 20px #ffcc00;
+    margin: 20px auto;
+    transition: transform 0.3s ease-in-out;
+    width: 80%;
+}
+
+.trainer-card:hover {
+    transform: scale(1.05);
+}
+
+.trainer-card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid #ffcc00;
+    margin-right: 20px;
+}
+
+.trainer-info h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.8rem;
+    text-shadow: 0 0 10px #ffcc00;
+}
+
+.trainer-info p {
+    color: #dddddd;
+    margin: 0.5rem 0;
+}
+
+h3 {
+    color: #9f7aea;
+    text-shadow: 0 0 10px #9f7aea;
+}
+
+ul#selectedSkillsList {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+ul#selectedSkillsList li {
+    display: inline-block;
+    background-color: #9f7aea;
+    color: #ffffff;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+ul#selectedSkillsList li:hover {
+    transform: scale(1.1);
+    background-color: #7b5bbd;
+}
+
+.schedule {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #9f7aea;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #9f7aea;
+    box-shadow: 0 0 30px #9f7aea, 0 0 60px #9f7aea;
+    transform: scale(1.05);
+}
+
+select.timeSlot {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #292838;
+    color: #ffffff;
+    border: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+select.timeSlot:hover {
+    background-color: #3a3850;
+}
+
+
+/* ✅ Make the Booking Page Responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .trainer-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .trainer-card img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 1rem;
+    }
+
+    .trainer-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .trainer-info p {
+        font-size: 1rem;
+    }
+
+    ul#selectedSkillsList li {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .schedule {
+        margin-top: 15px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    select.timeSlot {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .trainer-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .trainer-info h3 {
+        font-size: 1.3rem;
+    }
+
+    ul#selectedSkillsList li {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 18px;
+    }
+}
+
+/* footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0f0e17;
+    color: #ffffff;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #1f1e2e;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    box-shadow: 0 -4px 20px #9f7aea;
+    margin-top: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Profile Image */
+.footer-photo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffcc00;
+}
+
+/* Email Link */
+.footer-a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-a:hover {
+    color: #ffdb4d;
+    text-shadow: 0 0 5px #ffdb4d;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 0.3rem;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .footer-photo {
+        margin: 0.3rem 0;
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-content p {
+        margin: 0.2rem 0;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Up Tracker</title>
+    <link rel="icon" href="data:,">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Transform Your Life<br><span>Level Up Yourself</span></h1>
+            <p>Turn your daily habits into an RPG. Complete quests, gain XP, and watch yourself evolve in real life.</p>
+            <div class="buttons">
+                <button>Track Progress<br>Real-time Stats</button>
+                <button>Complete Quests<br>Gain Rewards</button>
+            </div>
+        </div>
+        <div class="form-container" id="auth-container">
+            <h2 id="form-title">Welcome Back</h2>
+            <p id="form-subtitle">Login to continue your journey</p>
+            <div class="form-group active" id="login-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                 <button class="action">Login</button>
+
+            </div>
+            <div class="form-group" id="register-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <button class="action">Register</button>
+            </div>
+            <div class="login-register">
+    <button type="button" onclick="showLogin()">Login</button>
+    <button type="button" onclick="showRegister()">Register</button>
+</div>
+
+        </div>
+    </div>
+
+   <footer>
+    <div class="footer-content">
+         <p>Developer : <strong>Manu.S</strong></p>
+        <img src="assets/images/formal.jpg" alt="Manu" class="footer-photo">
+         &nbsp; &nbsp;<p> LevelUp Fitness © 2025</p>   &nbsp; &nbsp;
+        <p>Contact: <a   class="footer-a" href="mailto:manu.gowda1615@gmail.com">manu.gowda1615@gmail.com</a></p>
+    </div>
+</footer>
+    
+ <script type="module" src="scripts/firebase.js"></script>
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
